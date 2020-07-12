@@ -93,6 +93,7 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="pwr_mng.c"/>
     <File Name="web_page.c"/>
     <File Name="weather.c"/>
     <File Name="humidity_sensor.c"/>

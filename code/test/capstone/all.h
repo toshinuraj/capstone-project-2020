@@ -6,5 +6,6 @@ char* temperature_sensor();
 char* humidity_sensor();
 char* weather_map();
 char* web_page_uplink();
+void pwr_mng();
 
 #endif

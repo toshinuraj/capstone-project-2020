@@ -1,1 +1,1 @@
-./Debug/web_page.c.o ./Debug/moisture_senasor.c.o ./Debug/main.c.o ./Debug/temperature_sensor.c.o ./Debug/humidity_sensor.c.o ./Debug/weather.c.o
+./Debug/pwr_mng.c.o ./Debug/web_page.c.o ./Debug/moisture_senasor.c.o ./Debug/main.c.o ./Debug/temperature_sensor.c.o ./Debug/humidity_sensor.c.o ./Debug/weather.c.o

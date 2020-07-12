@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/web_page.c$(ObjectSuffix) $(IntermediateDirectory)/moisture_senasor.c$(ObjectSuffix) $(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/temperature_sensor.c$(ObjectSuffix) $(IntermediateDirectory)/humidity_sensor.c$(ObjectSuffix) $(IntermediateDirectory)/weather.c$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/pwr_mng.c$(ObjectSuffix) $(IntermediateDirectory)/web_page.c$(ObjectSuffix) $(IntermediateDirectory)/moisture_senasor.c$(ObjectSuffix) $(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/temperature_sensor.c$(ObjectSuffix) $(IntermediateDirectory)/humidity_sensor.c$(ObjectSuffix) $(IntermediateDirectory)/weather.c$(ObjectSuffix) 
 
 
 
@@ -91,6 +91,14 @@ PreBuild:
 ##
 ## Objects
 ##
+$(IntermediateDirectory)/pwr_mng.c$(ObjectSuffix): pwr_mng.c $(IntermediateDirectory)/pwr_mng.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/pwr_mng.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/pwr_mng.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/pwr_mng.c$(DependSuffix): pwr_mng.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/pwr_mng.c$(ObjectSuffix) -MF$(IntermediateDirectory)/pwr_mng.c$(DependSuffix) -MM pwr_mng.c
+
+$(IntermediateDirectory)/pwr_mng.c$(PreprocessSuffix): pwr_mng.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/pwr_mng.c$(PreprocessSuffix) pwr_mng.c
+
 $(IntermediateDirectory)/web_page.c$(ObjectSuffix): web_page.c $(IntermediateDirectory)/web_page.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/web_page.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/web_page.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/web_page.c$(DependSuffix): web_page.c
