@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=anto
-Date                   :=11/07/20
+Date                   :=13/07/20
 CodeLitePath           :=/home/anto/.codelite
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/pwr_mng.c$(ObjectSuffix) $(IntermediateDirectory)/web_page.c$(ObjectSuffix) $(IntermediateDirectory)/moisture_senasor.c$(ObjectSuffix) $(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/temperature_sensor.c$(ObjectSuffix) $(IntermediateDirectory)/humidity_sensor.c$(ObjectSuffix) $(IntermediateDirectory)/weather.c$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/moisture_senasor.c$(ObjectSuffix) $(IntermediateDirectory)/weather.c$(ObjectSuffix) $(IntermediateDirectory)/web_page.c$(ObjectSuffix) $(IntermediateDirectory)/pwr_mng.c$(ObjectSuffix) $(IntermediateDirectory)/humidity_sensor.c$(ObjectSuffix) $(IntermediateDirectory)/temperature_sensor.c$(ObjectSuffix) 
 
 
 
@@ -91,21 +91,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/pwr_mng.c$(ObjectSuffix): pwr_mng.c $(IntermediateDirectory)/pwr_mng.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/pwr_mng.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/pwr_mng.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/pwr_mng.c$(DependSuffix): pwr_mng.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/pwr_mng.c$(ObjectSuffix) -MF$(IntermediateDirectory)/pwr_mng.c$(DependSuffix) -MM pwr_mng.c
+$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.c$(DependSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
 
-$(IntermediateDirectory)/pwr_mng.c$(PreprocessSuffix): pwr_mng.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/pwr_mng.c$(PreprocessSuffix) pwr_mng.c
-
-$(IntermediateDirectory)/web_page.c$(ObjectSuffix): web_page.c $(IntermediateDirectory)/web_page.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/web_page.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/web_page.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/web_page.c$(DependSuffix): web_page.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/web_page.c$(ObjectSuffix) -MF$(IntermediateDirectory)/web_page.c$(DependSuffix) -MM web_page.c
-
-$(IntermediateDirectory)/web_page.c$(PreprocessSuffix): web_page.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/web_page.c$(PreprocessSuffix) web_page.c
+$(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) main.c
 
 $(IntermediateDirectory)/moisture_senasor.c$(ObjectSuffix): moisture_senasor.c $(IntermediateDirectory)/moisture_senasor.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/moisture_senasor.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/moisture_senasor.c$(ObjectSuffix) $(IncludePath)
@@ -115,21 +107,29 @@ $(IntermediateDirectory)/moisture_senasor.c$(DependSuffix): moisture_senasor.c
 $(IntermediateDirectory)/moisture_senasor.c$(PreprocessSuffix): moisture_senasor.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/moisture_senasor.c$(PreprocessSuffix) moisture_senasor.c
 
-$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.c$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
+$(IntermediateDirectory)/weather.c$(ObjectSuffix): weather.c $(IntermediateDirectory)/weather.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/weather.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/weather.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/weather.c$(DependSuffix): weather.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/weather.c$(ObjectSuffix) -MF$(IntermediateDirectory)/weather.c$(DependSuffix) -MM weather.c
 
-$(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) main.c
+$(IntermediateDirectory)/weather.c$(PreprocessSuffix): weather.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/weather.c$(PreprocessSuffix) weather.c
 
-$(IntermediateDirectory)/temperature_sensor.c$(ObjectSuffix): temperature_sensor.c $(IntermediateDirectory)/temperature_sensor.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/temperature_sensor.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/temperature_sensor.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/temperature_sensor.c$(DependSuffix): temperature_sensor.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/temperature_sensor.c$(ObjectSuffix) -MF$(IntermediateDirectory)/temperature_sensor.c$(DependSuffix) -MM temperature_sensor.c
+$(IntermediateDirectory)/web_page.c$(ObjectSuffix): web_page.c $(IntermediateDirectory)/web_page.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/web_page.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/web_page.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/web_page.c$(DependSuffix): web_page.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/web_page.c$(ObjectSuffix) -MF$(IntermediateDirectory)/web_page.c$(DependSuffix) -MM web_page.c
 
-$(IntermediateDirectory)/temperature_sensor.c$(PreprocessSuffix): temperature_sensor.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/temperature_sensor.c$(PreprocessSuffix) temperature_sensor.c
+$(IntermediateDirectory)/web_page.c$(PreprocessSuffix): web_page.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/web_page.c$(PreprocessSuffix) web_page.c
+
+$(IntermediateDirectory)/pwr_mng.c$(ObjectSuffix): pwr_mng.c $(IntermediateDirectory)/pwr_mng.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/pwr_mng.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/pwr_mng.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/pwr_mng.c$(DependSuffix): pwr_mng.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/pwr_mng.c$(ObjectSuffix) -MF$(IntermediateDirectory)/pwr_mng.c$(DependSuffix) -MM pwr_mng.c
+
+$(IntermediateDirectory)/pwr_mng.c$(PreprocessSuffix): pwr_mng.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/pwr_mng.c$(PreprocessSuffix) pwr_mng.c
 
 $(IntermediateDirectory)/humidity_sensor.c$(ObjectSuffix): humidity_sensor.c $(IntermediateDirectory)/humidity_sensor.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/humidity_sensor.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/humidity_sensor.c$(ObjectSuffix) $(IncludePath)
@@ -139,13 +139,13 @@ $(IntermediateDirectory)/humidity_sensor.c$(DependSuffix): humidity_sensor.c
 $(IntermediateDirectory)/humidity_sensor.c$(PreprocessSuffix): humidity_sensor.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/humidity_sensor.c$(PreprocessSuffix) humidity_sensor.c
 
-$(IntermediateDirectory)/weather.c$(ObjectSuffix): weather.c $(IntermediateDirectory)/weather.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/weather.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/weather.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/weather.c$(DependSuffix): weather.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/weather.c$(ObjectSuffix) -MF$(IntermediateDirectory)/weather.c$(DependSuffix) -MM weather.c
+$(IntermediateDirectory)/temperature_sensor.c$(ObjectSuffix): temperature_sensor.c $(IntermediateDirectory)/temperature_sensor.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/home/anto/Desktop/Project/final-project/code/test/capstone/temperature_sensor.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/temperature_sensor.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/temperature_sensor.c$(DependSuffix): temperature_sensor.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/temperature_sensor.c$(ObjectSuffix) -MF$(IntermediateDirectory)/temperature_sensor.c$(DependSuffix) -MM temperature_sensor.c
 
-$(IntermediateDirectory)/weather.c$(PreprocessSuffix): weather.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/weather.c$(PreprocessSuffix) weather.c
+$(IntermediateDirectory)/temperature_sensor.c$(PreprocessSuffix): temperature_sensor.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/temperature_sensor.c$(PreprocessSuffix) temperature_sensor.c
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
