@@ -1,1 +1,9 @@
-clear sky
+temperature : 296.38 
+
+Pressure : 1013 
+
+humidity : 100 
+
+current weather : broken clouds
+weather in next 3 hrs : scattered clouds
+weather in next 6 hrs :few clouds
