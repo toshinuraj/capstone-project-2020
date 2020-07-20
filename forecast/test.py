@@ -1,5 +1,5 @@
 import requests, json
-response = requests.get("http://api.openweathermap.org/data/2.5/weather?q=toronto&appid=bf6bba48092edcf1ad4e563fe5b6e4e7") 
+response = requests.get("http://api.openweathermap.org/data/2.5/weather?q=toronto&appid={key}") 
 x = response.json() 
 if x["cod"] != "404":
 	y = x["main"] 
