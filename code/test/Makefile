@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ capstone - Debug ]----------"
-	@cd "capstone" && "$(MAKE)" -f  "capstone.mk"
+	@echo "----------Building project:[ weather_map - Debug ]----------"
+	@cd "weather_map" && "$(MAKE)" -f  "weather_map.mk"
 clean:
-	@echo "----------Cleaning project:[ capstone - Debug ]----------"
-	@cd "capstone" && "$(MAKE)" -f  "capstone.mk" clean
+	@echo "----------Cleaning project:[ weather_map - Debug ]----------"
+	@cd "weather_map" && "$(MAKE)" -f  "weather_map.mk" clean

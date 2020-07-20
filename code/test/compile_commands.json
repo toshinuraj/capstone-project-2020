@@ -1,4 +1,8 @@
 [{
+  "file": "/home/anto/Desktop/Project/final-project/code/test/weather_map/main.c",
+  "directory": "/home/anto/Desktop/Project/final-project/code/test/weather_map",
+  "command": "clang  -c /home/anto/Desktop/Project/final-project/code/test/weather_map/main.c -o /home/anto/Desktop/Project/final-project/code/test/weather_map/main.c.o  -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/home/anto/Desktop/Project/final-project/code/test/capstone/main.c",
   "directory": "/home/anto/Desktop/Project/final-project/code/test/capstone",
   "command": "clang  -c /home/anto/Desktop/Project/final-project/code/test/capstone/main.c -o /home/anto/Desktop/Project/final-project/code/test/capstone/main.c.o  -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I.  -g  -O0  -Wall"
