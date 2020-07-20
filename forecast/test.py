@@ -22,7 +22,7 @@ else:
 #path = '/home/
 
 #import requests, json 
-response = requests.get("https://api.openweathermap.org/data/2.5/forecast?q=toronto&appid=bf6bba48092edcf1ad4e563fe5b6e4e7") 
+response = requests.get("https://api.openweathermap.org/data/2.5/forecast?q={key}") 
 x = response.json()
 if x["cod"] != "404":
 	y = x["list"] 
