@@ -1,8 +1,8 @@
 char* weather_map()
 {
     //return "Weather Map API not confgured/linked";
-    char filename[] = "/home/..../weather.py";
-	FILE* fp;
+    char filename[] = "/home/Desktop/weather.py";
+	FILE *fp;
 
 	Py_Initialize();
 

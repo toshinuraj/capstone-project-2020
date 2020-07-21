@@ -1,6 +1,8 @@
-#include <Python.h>
+#include <python2.7/Python.h>
+#include <string.h>
 #include <stdio.h>
 #include <string.h>
+
 
 #include "all.h"
 
