@@ -1,0 +1,33 @@
+[{
+  "file": "/home/anto/Desktop/Project/final-project/code/test/capstone/main.c",
+  "directory": "/home/anto/Desktop/Project/final-project/code/test/capstone",
+  "command": "clang  -c /home/anto/Desktop/Project/final-project/code/test/capstone/main.c -o /home/anto/Desktop/Project/final-project/code/test/capstone/main.c.o  -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/home/anto/Desktop/Project/final-project/code/test/capstone/moisture_senasor.c",
+  "directory": "/home/anto/Desktop/Project/final-project/code/test/capstone",
+  "command": "clang  -c /home/anto/Desktop/Project/final-project/code/test/capstone/moisture_senasor.c -o /home/anto/Desktop/Project/final-project/code/test/capstone/moisture_senasor.c.o  -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/home/anto/Desktop/Project/final-project/code/test/capstone/weather.c",
+  "directory": "/home/anto/Desktop/Project/final-project/code/test/capstone",
+  "command": "clang  -c /home/anto/Desktop/Project/final-project/code/test/capstone/weather.c -o /home/anto/Desktop/Project/final-project/code/test/capstone/weather.c.o  -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/home/anto/Desktop/Project/final-project/code/test/capstone/web_page.c",
+  "directory": "/home/anto/Desktop/Project/final-project/code/test/capstone",
+  "command": "clang  -c /home/anto/Desktop/Project/final-project/code/test/capstone/web_page.c -o /home/anto/Desktop/Project/final-project/code/test/capstone/web_page.c.o  -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/home/anto/Desktop/Project/final-project/code/test/capstone/pwr_mng.c",
+  "directory": "/home/anto/Desktop/Project/final-project/code/test/capstone",
+  "command": "clang  -c /home/anto/Desktop/Project/final-project/code/test/capstone/pwr_mng.c -o /home/anto/Desktop/Project/final-project/code/test/capstone/pwr_mng.c.o  -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/home/anto/Desktop/Project/final-project/code/test/capstone/humidity_sensor.c",
+  "directory": "/home/anto/Desktop/Project/final-project/code/test/capstone",
+  "command": "clang  -c /home/anto/Desktop/Project/final-project/code/test/capstone/humidity_sensor.c -o /home/anto/Desktop/Project/final-project/code/test/capstone/humidity_sensor.c.o  -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/home/anto/Desktop/Project/final-project/code/test/capstone/temperature_sensor.c",
+  "directory": "/home/anto/Desktop/Project/final-project/code/test/capstone",
+  "command": "clang  -c /home/anto/Desktop/Project/final-project/code/test/capstone/temperature_sensor.c -o /home/anto/Desktop/Project/final-project/code/test/capstone/temperature_sensor.c.o  -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/home/anto/Desktop/Project/final-project/code/test/capstone/all.h",
+  "directory": "/home/anto/Desktop/Project/final-project/code/test/capstone",
+  "command": "clang  -c /home/anto/Desktop/Project/final-project/code/test/capstone/all.h -o /home/anto/Desktop/Project/final-project/code/test/capstone/all.h.o  -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I.  -g  -O0  -Wall"
+ }]
